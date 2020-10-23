@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       <h1> Rock, Paper, Scissors!</h1>
-     
+        <button> Play! </button>
       </header>
     </div>
   );
