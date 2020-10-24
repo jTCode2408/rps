@@ -10,8 +10,24 @@ const Game = ()=>{
  const [scissor, setScissor] = useState();
  const [score, setScore] = useState();
  const [winner, setWinner]= useState();
- 
+ const [userPick, setUserPick]= useState();
+ const [cpuPick, setCpuPick]= useState();
 
+
+const whoWins = ()=>{
+
+  if (userPick == rock && cpuPick == scissor){
+    setWinner(userPick)
+  } else if (userPick == paper && cpuPick == rock)
+  {
+      setWinner(userPick)
+  } 
+  else if (userPick == scissor && cpuPick == paper) {
+      setWinner(userPick)
+  }
+
+  
+}
 
     return (
         <div className = "game-cont">
